@@ -1,0 +1,16 @@
+PODS:
+  - EasyJSWKWebView (0.1.0)
+
+DEPENDENCIES:
+  - EasyJSWKWebView (from `../`)
+
+EXTERNAL SOURCES:
+  EasyJSWKWebView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyJSWKWebView: 1e44e4968a04fc7368b0a14c3f286ddc3b2be1b7
+
+PODFILE CHECKSUM: c149eb83ed7175f660ddb9dd10d945a29bcdc1bc
+
+COCOAPODS: 1.0.1

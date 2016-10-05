@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02527058B55CB4B1E08D716D8FD531CE /* Pods-EasyJSWKWebView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC84C1D850B9A9E054AA4179ACFDAE3 /* Pods-EasyJSWKWebView_Tests-dummy.m */; };
+		104950CDF3177D98FDB6C82BD6573F74 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD3A1838491CCD00DBC7211D9F6A0D7 /* WebKit.framework */; };
+		245187ECF17E85332C15C1F5090B86B3 /* WKUserScript+InterfacesScriptGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = B97833DE410C9CEA40541BE277762707 /* WKUserScript+InterfacesScriptGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C7E0F7715A33BC3BC26F5FAC37F4164 /* Pods-EasyJSWKWebView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E83B596538D6E395C3760DC822C2B883 /* Pods-EasyJSWKWebView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E425DB74A8258CC2EB4A1317758F9F4 /* EasyJSListener.h in Headers */ = {isa = PBXBuildFile; fileRef = B60C67C3ED0C1DAAA84FBFA2C3E3D4BD /* EasyJSListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F6B95C8EFD5533766D0054AE03600DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AF1F6D671C390DBB91C8E5A9AEC130 /* Foundation.framework */; };
+		36678E4A455FA96CC487400B8EB85E72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AF1F6D671C390DBB91C8E5A9AEC130 /* Foundation.framework */; };
+		3C1085A9EE38F60A628F50C739BA4EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AF1F6D671C390DBB91C8E5A9AEC130 /* Foundation.framework */; };
+		40760050D5374B2ADB2FB2C235C19D56 /* EasyJSWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45ADF60A5722F905DFAC1B92295D8164 /* EasyJSWKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439DCB097ADE5CFBFA852D166CF92960 /* WKUserScript+InterfacesScriptGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FE363EE641F7E8CE7E0C6D961A132704 /* WKUserScript+InterfacesScriptGenerator.m */; };
+		547F4F2AE0931040556E97EB46D4EFAE /* EasyJSWKDataFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B82F0AFA7F470F4AE4FB002B93D9A2 /* EasyJSWKDataFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F5A9356C5C59BE6AAEFC32F24CEB9CB /* WKWebView+SynchronousEvaluateJavaScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CF5CE8637A9AD5C0CCAC4EB8FC81EA4 /* WKWebView+SynchronousEvaluateJavaScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71A3A57C0E543D979B5121CBF4FFA830 /* Pods-EasyJSWKWebView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F3CFAB279C4B73FD18BCDD22492997 /* Pods-EasyJSWKWebView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BC68521A0A6640F5DCCDEE23CB623E /* easyjs-inject.js in Resources */ = {isa = PBXBuildFile; fileRef = EEDF8E978BC1C9972FA7FDB369EBF679 /* easyjs-inject.js */; };
+		7AA707EE9A8B3765E131E8348E9799ED /* EasyJSWKWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A383699A4172269685624748F9C6ED /* EasyJSWKWebView-dummy.m */; };
+		7F179BBC89DF3807EC58FB5A046F6024 /* Pods-EasyJSWKWebView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E553A2CFD3EBACFBAF385822188CA /* Pods-EasyJSWKWebView_Example-dummy.m */; };
+		A59BC213FDBBF7D32B569FB4D8AC0658 /* EasyJSWKWebView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41520DF35430A934F618C834B4EC9B3F /* EasyJSWKWebView.bundle */; };
+		A8A69A18F6EE1BB387E7297AE5CD8ABB /* EasyJSWKWebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D3D071B406569CB9816F9012756D9E /* EasyJSWKWebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4234E78B383053E599008C181EBA376 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F6609E6234C51167B6A9333928E3 /* UIKit.framework */; };
+		EB8410844EF004C28EC0D819889B4926 /* EasyJSListener.m in Sources */ = {isa = PBXBuildFile; fileRef = C26B2C105F477433E5CA6513D47CE793 /* EasyJSListener.m */; };
+		F3CB84D02790DA0D876D8C0AD510C406 /* EasyJSWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BE07072041522277A6B81AD2D9019 /* EasyJSWKWebView.m */; };
+		F4F286AAB240B8AF55CDB05395E25561 /* WKWebView+SynchronousEvaluateJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8F899D3B510A732BBC42CDFC192982 /* WKWebView+SynchronousEvaluateJavaScript.m */; };
+		F6BF689980B2569CFEA9143904276BBE /* EasyJSWKDataFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 728A601E52676CABB8A0A9D8DDFE3517 /* EasyJSWKDataFunction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80FA0AA70D6D444675FD2DCC7AB441F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9861D87FFE789EE622C2193B241C4879;
+			remoteInfo = EasyJSWKWebView;
+		};
+		C8793053417C2A417B1A7E1B6F547675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B4287F3D55D51D4CDE08F29203D034D;
+			remoteInfo = "EasyJSWKWebView-EasyJSWKWebView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02BD24BBAE71B4033C3FC35D7BCFF7DD /* EasyJSWKWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyJSWKWebView-prefix.pch"; sourceTree = "<group>"; };
+		13953F709D34C35C3A4F2F9E75B0D8A2 /* Pods-EasyJSWKWebView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyJSWKWebView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		13D3D071B406569CB9816F9012756D9E /* EasyJSWKWebView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyJSWKWebView-umbrella.h"; sourceTree = "<group>"; };
+		1781C0ED849A45614B4714642B75AC4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		207214D3CB0FEC4EF8ADB83EED5E6889 /* EasyJSWKWebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyJSWKWebView.modulemap; sourceTree = "<group>"; };
+		30AF1F6D671C390DBB91C8E5A9AEC130 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3AB3F3B9A6176FFB339D35E2870D1632 /* Pods_EasyJSWKWebView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyJSWKWebView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41520DF35430A934F618C834B4EC9B3F /* EasyJSWKWebView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyJSWKWebView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ADF60A5722F905DFAC1B92295D8164 /* EasyJSWKWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EasyJSWKWebView.h; sourceTree = "<group>"; };
+		46A383699A4172269685624748F9C6ED /* EasyJSWKWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyJSWKWebView-dummy.m"; sourceTree = "<group>"; };
+		4EAC83E65A92B4FB30A52598BE924A6C /* Pods-EasyJSWKWebView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyJSWKWebView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		56D7972A60D29C3E313A187AFAF87AE5 /* Pods-EasyJSWKWebView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyJSWKWebView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		598F13851DFC55C15914E80D0DB512F5 /* ResourceBundle-EasyJSWKWebView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-EasyJSWKWebView-Info.plist"; sourceTree = "<group>"; };
+		5CF5CE8637A9AD5C0CCAC4EB8FC81EA4 /* WKWebView+SynchronousEvaluateJavaScript.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKWebView+SynchronousEvaluateJavaScript.h"; sourceTree = "<group>"; };
+		67F3CFAB279C4B73FD18BCDD22492997 /* Pods-EasyJSWKWebView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyJSWKWebView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6FCC411A508F5155590D0D019AB5B6F0 /* Pods-EasyJSWKWebView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyJSWKWebView_Example.modulemap"; sourceTree = "<group>"; };
+		727727E90B84B2DDFFF418710BDE2466 /* Pods-EasyJSWKWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyJSWKWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		728A601E52676CABB8A0A9D8DDFE3517 /* EasyJSWKDataFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EasyJSWKDataFunction.m; sourceTree = "<group>"; };
+		7B8327B99BF9CB6760679D15DBA1C2DC /* EasyJSWKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyJSWKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E302B44AD3DDA9E1A0D35F599CB7552 /* Pods-EasyJSWKWebView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyJSWKWebView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7F3BE07072041522277A6B81AD2D9019 /* EasyJSWKWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EasyJSWKWebView.m; sourceTree = "<group>"; };
+		80CE8C0F828C324A3A0530E20F509886 /* Pods-EasyJSWKWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyJSWKWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		81F41FB54EAC9FEB285752564C18DC5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E17D505E4467F5AA3889AB08522DF8 /* EasyJSWKWebView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyJSWKWebView.xcconfig; sourceTree = "<group>"; };
+		8F07E57552A41CD76F02B7CB4CF850C3 /* Pods-EasyJSWKWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyJSWKWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0A08C8F8AB189459E25C8B5326BDEE6 /* Pods-EasyJSWKWebView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyJSWKWebView_Tests.modulemap"; sourceTree = "<group>"; };
+		B160F6609E6234C51167B6A9333928E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B60C67C3ED0C1DAAA84FBFA2C3E3D4BD /* EasyJSListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EasyJSListener.h; sourceTree = "<group>"; };
+		B97833DE410C9CEA40541BE277762707 /* WKUserScript+InterfacesScriptGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKUserScript+InterfacesScriptGenerator.h"; sourceTree = "<group>"; };
+		BB17B8DE4FE42E3109531D1A2967D03C /* Pods-EasyJSWKWebView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyJSWKWebView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDE6CF02711F154B546B18EE6F46DD07 /* Pods-EasyJSWKWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyJSWKWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8F899D3B510A732BBC42CDFC192982 /* WKWebView+SynchronousEvaluateJavaScript.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+SynchronousEvaluateJavaScript.m"; sourceTree = "<group>"; };
+		BFC84C1D850B9A9E054AA4179ACFDAE3 /* Pods-EasyJSWKWebView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyJSWKWebView_Tests-dummy.m"; sourceTree = "<group>"; };
+		C26B2C105F477433E5CA6513D47CE793 /* EasyJSListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EasyJSListener.m; sourceTree = "<group>"; };
+		C7EEBC2FE2DD634981D2F5D3F4D66A7F /* Pods_EasyJSWKWebView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyJSWKWebView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9218E0771FC1923F06562F8C7CD1E05 /* Pods-EasyJSWKWebView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyJSWKWebView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9B82F0AFA7F470F4AE4FB002B93D9A2 /* EasyJSWKDataFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EasyJSWKDataFunction.h; sourceTree = "<group>"; };
+		DDD3A1838491CCD00DBC7211D9F6A0D7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF43B30B24F2BB68896DDC588F2A6695 /* Pods-EasyJSWKWebView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyJSWKWebView_Example-resources.sh"; sourceTree = "<group>"; };
+		E83B596538D6E395C3760DC822C2B883 /* Pods-EasyJSWKWebView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyJSWKWebView_Example-umbrella.h"; sourceTree = "<group>"; };
+		EC01823CFDE1D2AA8C0B5ABBA8E715E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDF8E978BC1C9972FA7FDB369EBF679 /* easyjs-inject.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; path = "easyjs-inject.js"; sourceTree = "<group>"; };
+		FC3E553A2CFD3EBACFBAF385822188CA /* Pods-EasyJSWKWebView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyJSWKWebView_Example-dummy.m"; sourceTree = "<group>"; };
+		FE363EE641F7E8CE7E0C6D961A132704 /* WKUserScript+InterfacesScriptGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WKUserScript+InterfacesScriptGenerator.m"; sourceTree = "<group>"; };
+		FF99CF9349C96E9B4E94EF983E92B304 /* Pods-EasyJSWKWebView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyJSWKWebView_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AE405AB62E140AFC105396BA62CE49D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6B95C8EFD5533766D0054AE03600DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D5F04930AEDB995F4F2C012050E211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1085A9EE38F60A628F50C739BA4EE3 /* Foundation.framework in Frameworks */,
+				D4234E78B383053E599008C181EBA376 /* UIKit.framework in Frameworks */,
+				104950CDF3177D98FDB6C82BD6573F74 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA96279D21C289899995E8946EB39D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AF0CE8E49AD4272B3DC070757893E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36678E4A455FA96CC487400B8EB85E72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01EFF4F667422616DC3EFD6D21EC8DB7 /* EasyJSWKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB3DF66331EDD9BC89CD7D5417B591 /* EasyJSWKWebView */,
+				1BC91AAF57D842B718F08B9C2C0DB173 /* Resources */,
+				1C258C66D77B6D35EB88BDD7252B5459 /* Support Files */,
+			);
+			name = EasyJSWKWebView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		08BA794D8C13465813576A05DF2FC578 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B60C67C3ED0C1DAAA84FBFA2C3E3D4BD /* EasyJSListener.h */,
+				C26B2C105F477433E5CA6513D47CE793 /* EasyJSListener.m */,
+				C9B82F0AFA7F470F4AE4FB002B93D9A2 /* EasyJSWKDataFunction.h */,
+				728A601E52676CABB8A0A9D8DDFE3517 /* EasyJSWKDataFunction.m */,
+				45ADF60A5722F905DFAC1B92295D8164 /* EasyJSWKWebView.h */,
+				7F3BE07072041522277A6B81AD2D9019 /* EasyJSWKWebView.m */,
+				B97833DE410C9CEA40541BE277762707 /* WKUserScript+InterfacesScriptGenerator.h */,
+				FE363EE641F7E8CE7E0C6D961A132704 /* WKUserScript+InterfacesScriptGenerator.m */,
+				5CF5CE8637A9AD5C0CCAC4EB8FC81EA4 /* WKWebView+SynchronousEvaluateJavaScript.h */,
+				BF8F899D3B510A732BBC42CDFC192982 /* WKWebView+SynchronousEvaluateJavaScript.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0D1CA9712E3817E7E7C9684BF842CFF0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF8E978BC1C9972FA7FDB369EBF679 /* easyjs-inject.js */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9EF718253E53076B84220C209CCBFE2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BC91AAF57D842B718F08B9C2C0DB173 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8DFEC6BFC54083C2A635B3E7A37B694 /* EasyJSWKWebView */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1C258C66D77B6D35EB88BDD7252B5459 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				207214D3CB0FEC4EF8ADB83EED5E6889 /* EasyJSWKWebView.modulemap */,
+				89E17D505E4467F5AA3889AB08522DF8 /* EasyJSWKWebView.xcconfig */,
+				46A383699A4172269685624748F9C6ED /* EasyJSWKWebView-dummy.m */,
+				02BD24BBAE71B4033C3FC35D7BCFF7DD /* EasyJSWKWebView-prefix.pch */,
+				13D3D071B406569CB9816F9012756D9E /* EasyJSWKWebView-umbrella.h */,
+				81F41FB54EAC9FEB285752564C18DC5A /* Info.plist */,
+				598F13851DFC55C15914E80D0DB512F5 /* ResourceBundle-EasyJSWKWebView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EasyJSWKWebView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FCAA8B3E4D3719B09639186020BA7A3B /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				D0732C9ABFFA5A2522658DAA475E5FE0 /* Products */,
+				C6BA3821DE1A63F7A011ED6EC4B8E898 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		94A82778ADC8A3C9B22CB6D07842376F /* Pods-EasyJSWKWebView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1781C0ED849A45614B4714642B75AC4A /* Info.plist */,
+				B0A08C8F8AB189459E25C8B5326BDEE6 /* Pods-EasyJSWKWebView_Tests.modulemap */,
+				4EAC83E65A92B4FB30A52598BE924A6C /* Pods-EasyJSWKWebView_Tests-acknowledgements.markdown */,
+				BB17B8DE4FE42E3109531D1A2967D03C /* Pods-EasyJSWKWebView_Tests-acknowledgements.plist */,
+				BFC84C1D850B9A9E054AA4179ACFDAE3 /* Pods-EasyJSWKWebView_Tests-dummy.m */,
+				7E302B44AD3DDA9E1A0D35F599CB7552 /* Pods-EasyJSWKWebView_Tests-frameworks.sh */,
+				FF99CF9349C96E9B4E94EF983E92B304 /* Pods-EasyJSWKWebView_Tests-resources.sh */,
+				67F3CFAB279C4B73FD18BCDD22492997 /* Pods-EasyJSWKWebView_Tests-umbrella.h */,
+				BDE6CF02711F154B546B18EE6F46DD07 /* Pods-EasyJSWKWebView_Tests.debug.xcconfig */,
+				8F07E57552A41CD76F02B7CB4CF850C3 /* Pods-EasyJSWKWebView_Tests.release.xcconfig */,
+			);
+			name = "Pods-EasyJSWKWebView_Tests";
+			path = "Target Support Files/Pods-EasyJSWKWebView_Tests";
+			sourceTree = "<group>";
+		};
+		C6BA3821DE1A63F7A011ED6EC4B8E898 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D70AF1C4799B9C80622EF89D7D27031B /* Pods-EasyJSWKWebView_Example */,
+				94A82778ADC8A3C9B22CB6D07842376F /* Pods-EasyJSWKWebView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C8DFEC6BFC54083C2A635B3E7A37B694 /* EasyJSWKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				0D1CA9712E3817E7E7C9684BF842CFF0 /* Assets */,
+			);
+			path = EasyJSWKWebView;
+			sourceTree = "<group>";
+		};
+		D0732C9ABFFA5A2522658DAA475E5FE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41520DF35430A934F618C834B4EC9B3F /* EasyJSWKWebView.bundle */,
+				7B8327B99BF9CB6760679D15DBA1C2DC /* EasyJSWKWebView.framework */,
+				C7EEBC2FE2DD634981D2F5D3F4D66A7F /* Pods_EasyJSWKWebView_Example.framework */,
+				3AB3F3B9A6176FFB339D35E2870D1632 /* Pods_EasyJSWKWebView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D70AF1C4799B9C80622EF89D7D27031B /* Pods-EasyJSWKWebView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EC01823CFDE1D2AA8C0B5ABBA8E715E7 /* Info.plist */,
+				6FCC411A508F5155590D0D019AB5B6F0 /* Pods-EasyJSWKWebView_Example.modulemap */,
+				C9218E0771FC1923F06562F8C7CD1E05 /* Pods-EasyJSWKWebView_Example-acknowledgements.markdown */,
+				13953F709D34C35C3A4F2F9E75B0D8A2 /* Pods-EasyJSWKWebView_Example-acknowledgements.plist */,
+				FC3E553A2CFD3EBACFBAF385822188CA /* Pods-EasyJSWKWebView_Example-dummy.m */,
+				56D7972A60D29C3E313A187AFAF87AE5 /* Pods-EasyJSWKWebView_Example-frameworks.sh */,
+				DF43B30B24F2BB68896DDC588F2A6695 /* Pods-EasyJSWKWebView_Example-resources.sh */,
+				E83B596538D6E395C3760DC822C2B883 /* Pods-EasyJSWKWebView_Example-umbrella.h */,
+				727727E90B84B2DDFFF418710BDE2466 /* Pods-EasyJSWKWebView_Example.debug.xcconfig */,
+				80CE8C0F828C324A3A0530E20F509886 /* Pods-EasyJSWKWebView_Example.release.xcconfig */,
+			);
+			name = "Pods-EasyJSWKWebView_Example";
+			path = "Target Support Files/Pods-EasyJSWKWebView_Example";
+			sourceTree = "<group>";
+		};
+		E2FB3DF66331EDD9BC89CD7D5417B591 /* EasyJSWKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				08BA794D8C13465813576A05DF2FC578 /* Classes */,
+			);
+			path = EasyJSWKWebView;
+			sourceTree = "<group>";
+		};
+		F9EF718253E53076B84220C209CCBFE2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				30AF1F6D671C390DBB91C8E5A9AEC130 /* Foundation.framework */,
+				B160F6609E6234C51167B6A9333928E3 /* UIKit.framework */,
+				DDD3A1838491CCD00DBC7211D9F6A0D7 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FCAA8B3E4D3719B09639186020BA7A3B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01EFF4F667422616DC3EFD6D21EC8DB7 /* EasyJSWKWebView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		636540E608E457E441FD755A61A83112 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7E0F7715A33BC3BC26F5FAC37F4164 /* Pods-EasyJSWKWebView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7711CBDBFF18F14B841430D133A4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A3A57C0E543D979B5121CBF4FFA830 /* Pods-EasyJSWKWebView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9B97F46D19A3A267868D4C31ECF773 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E425DB74A8258CC2EB4A1317758F9F4 /* EasyJSListener.h in Headers */,
+				547F4F2AE0931040556E97EB46D4EFAE /* EasyJSWKDataFunction.h in Headers */,
+				A8A69A18F6EE1BB387E7297AE5CD8ABB /* EasyJSWKWebView-umbrella.h in Headers */,
+				40760050D5374B2ADB2FB2C235C19D56 /* EasyJSWKWebView.h in Headers */,
+				245187ECF17E85332C15C1F5090B86B3 /* WKUserScript+InterfacesScriptGenerator.h in Headers */,
+				5F5A9356C5C59BE6AAEFC32F24CEB9CB /* WKWebView+SynchronousEvaluateJavaScript.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B4287F3D55D51D4CDE08F29203D034D /* EasyJSWKWebView-EasyJSWKWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53B047248342DC31B771940BF78E0E01 /* Build configuration list for PBXNativeTarget "EasyJSWKWebView-EasyJSWKWebView" */;
+			buildPhases = (
+				D21C589D19A3FB066C27768C06C08627 /* Sources */,
+				9CA96279D21C289899995E8946EB39D4 /* Frameworks */,
+				603AD557041C8AE552768059AB180B4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EasyJSWKWebView-EasyJSWKWebView";
+			productName = "EasyJSWKWebView-EasyJSWKWebView";
+			productReference = 41520DF35430A934F618C834B4EC9B3F /* EasyJSWKWebView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7FCA813D3A50084FCC399DD2BACCEBE8 /* Pods-EasyJSWKWebView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39021802ADA29DEFD86C074047C1050F /* Build configuration list for PBXNativeTarget "Pods-EasyJSWKWebView_Tests" */;
+			buildPhases = (
+				80159282ABEC23D596BB8A24423D2F98 /* Sources */,
+				F9AF0CE8E49AD4272B3DC070757893E6 /* Frameworks */,
+				7B7711CBDBFF18F14B841430D133A4B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyJSWKWebView_Tests";
+			productName = "Pods-EasyJSWKWebView_Tests";
+			productReference = 3AB3F3B9A6176FFB339D35E2870D1632 /* Pods_EasyJSWKWebView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9861D87FFE789EE622C2193B241C4879 /* EasyJSWKWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AD4B0925C27E4717760FAEBE5B0637B /* Build configuration list for PBXNativeTarget "EasyJSWKWebView" */;
+			buildPhases = (
+				7E1ADE9F9553E9DEB8D1A08705B5C385 /* Sources */,
+				84D5F04930AEDB995F4F2C012050E211 /* Frameworks */,
+				3950DE74777CE295A1E7C7508755D8EB /* Resources */,
+				BF9B97F46D19A3A267868D4C31ECF773 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BDA75412D686F78542FD291A61BFB5C /* PBXTargetDependency */,
+			);
+			name = EasyJSWKWebView;
+			productName = EasyJSWKWebView;
+			productReference = 7B8327B99BF9CB6760679D15DBA1C2DC /* EasyJSWKWebView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C551E061E393A794D2F963389D1CD466 /* Pods-EasyJSWKWebView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930AC4DE1ABB9D02724145D1FF5B2418 /* Build configuration list for PBXNativeTarget "Pods-EasyJSWKWebView_Example" */;
+			buildPhases = (
+				BCD5B9BE0923F0E512E3E70D8D5DEB2F /* Sources */,
+				2AE405AB62E140AFC105396BA62CE49D /* Frameworks */,
+				636540E608E457E441FD755A61A83112 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790A100A0486013ED159B7C747FE15BA /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyJSWKWebView_Example";
+			productName = "Pods-EasyJSWKWebView_Example";
+			productReference = C7EEBC2FE2DD634981D2F5D3F4D66A7F /* Pods_EasyJSWKWebView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D0732C9ABFFA5A2522658DAA475E5FE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9861D87FFE789EE622C2193B241C4879 /* EasyJSWKWebView */,
+				5B4287F3D55D51D4CDE08F29203D034D /* EasyJSWKWebView-EasyJSWKWebView */,
+				C551E061E393A794D2F963389D1CD466 /* Pods-EasyJSWKWebView_Example */,
+				7FCA813D3A50084FCC399DD2BACCEBE8 /* Pods-EasyJSWKWebView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3950DE74777CE295A1E7C7508755D8EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59BC213FDBBF7D32B569FB4D8AC0658 /* EasyJSWKWebView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		603AD557041C8AE552768059AB180B4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BC68521A0A6640F5DCCDEE23CB623E /* easyjs-inject.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E1ADE9F9553E9DEB8D1A08705B5C385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8410844EF004C28EC0D819889B4926 /* EasyJSListener.m in Sources */,
+				F6BF689980B2569CFEA9143904276BBE /* EasyJSWKDataFunction.m in Sources */,
+				7AA707EE9A8B3765E131E8348E9799ED /* EasyJSWKWebView-dummy.m in Sources */,
+				F3CB84D02790DA0D876D8C0AD510C406 /* EasyJSWKWebView.m in Sources */,
+				439DCB097ADE5CFBFA852D166CF92960 /* WKUserScript+InterfacesScriptGenerator.m in Sources */,
+				F4F286AAB240B8AF55CDB05395E25561 /* WKWebView+SynchronousEvaluateJavaScript.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80159282ABEC23D596BB8A24423D2F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02527058B55CB4B1E08D716D8FD531CE /* Pods-EasyJSWKWebView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD5B9BE0923F0E512E3E70D8D5DEB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F179BBC89DF3807EC58FB5A046F6024 /* Pods-EasyJSWKWebView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21C589D19A3FB066C27768C06C08627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BDA75412D686F78542FD291A61BFB5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "EasyJSWKWebView-EasyJSWKWebView";
+			target = 5B4287F3D55D51D4CDE08F29203D034D /* EasyJSWKWebView-EasyJSWKWebView */;
+			targetProxy = C8793053417C2A417B1A7E1B6F547675 /* PBXContainerItemProxy */;
+		};
+		790A100A0486013ED159B7C747FE15BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyJSWKWebView;
+			target = 9861D87FFE789EE622C2193B241C4879 /* EasyJSWKWebView */;
+			targetProxy = 80FA0AA70D6D444675FD2DCC7AB441F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1829DAD26350E358456B7984820C60DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CE8C0F828C324A3A0530E20F509886 /* Pods-EasyJSWKWebView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyJSWKWebView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyJSWKWebView_Example/Pods-EasyJSWKWebView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyJSWKWebView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2695FEE034EFE69557E50DA4D84CF074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E17D505E4467F5AA3889AB08522DF8 /* EasyJSWKWebView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/EasyJSWKWebView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/EasyJSWKWebView/ResourceBundle-EasyJSWKWebView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = EasyJSWKWebView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5718AAF6C6E603D43649A652C51E7D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727727E90B84B2DDFFF418710BDE2466 /* Pods-EasyJSWKWebView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyJSWKWebView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyJSWKWebView_Example/Pods-EasyJSWKWebView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyJSWKWebView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6154045FB5366FC14660A950BC1058F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E17D505E4467F5AA3889AB08522DF8 /* EasyJSWKWebView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/EasyJSWKWebView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/EasyJSWKWebView/ResourceBundle-EasyJSWKWebView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = EasyJSWKWebView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		878948CEB7EFD4D67625604ED29D6F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F07E57552A41CD76F02B7CB4CF850C3 /* Pods-EasyJSWKWebView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyJSWKWebView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyJSWKWebView_Tests/Pods-EasyJSWKWebView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyJSWKWebView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A854496802B7A919A8B796D4DB59E6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE6CF02711F154B546B18EE6F46DD07 /* Pods-EasyJSWKWebView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyJSWKWebView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyJSWKWebView_Tests/Pods-EasyJSWKWebView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyJSWKWebView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2DA46F9E8A767F4A85CF0A2EA65C514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E17D505E4467F5AA3889AB08522DF8 /* EasyJSWKWebView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyJSWKWebView/EasyJSWKWebView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyJSWKWebView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyJSWKWebView/EasyJSWKWebView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyJSWKWebView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E910C8834D2838BC2877B9FBD2F97E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E17D505E4467F5AA3889AB08522DF8 /* EasyJSWKWebView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyJSWKWebView/EasyJSWKWebView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyJSWKWebView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyJSWKWebView/EasyJSWKWebView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyJSWKWebView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39021802ADA29DEFD86C074047C1050F /* Build configuration list for PBXNativeTarget "Pods-EasyJSWKWebView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A854496802B7A919A8B796D4DB59E6F0 /* Debug */,
+				878948CEB7EFD4D67625604ED29D6F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53B047248342DC31B771940BF78E0E01 /* Build configuration list for PBXNativeTarget "EasyJSWKWebView-EasyJSWKWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2695FEE034EFE69557E50DA4D84CF074 /* Debug */,
+				6154045FB5366FC14660A950BC1058F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AD4B0925C27E4717760FAEBE5B0637B /* Build configuration list for PBXNativeTarget "EasyJSWKWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DA46F9E8A767F4A85CF0A2EA65C514 /* Debug */,
+				E910C8834D2838BC2877B9FBD2F97E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930AC4DE1ABB9D02724145D1FF5B2418 /* Build configuration list for PBXNativeTarget "Pods-EasyJSWKWebView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5718AAF6C6E603D43649A652C51E7D05 /* Debug */,
+				1829DAD26350E358456B7984820C60DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module EasyJSWKWebView {
+  umbrella header "EasyJSWKWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}

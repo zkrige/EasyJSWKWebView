@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyJSWKWebView_Example' do
+  pod 'EasyJSWKWebView', :path => '../'
+
+  target 'EasyJSWKWebView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

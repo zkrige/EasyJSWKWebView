@@ -1,6 +1,5 @@
 # EasyJSWKWebView
 
-[![CI Status](http://img.shields.io/travis/Zayin Krige/EasyJSWKWebView.svg?style=flat)](https://travis-ci.org/Zayin Krige/EasyJSWKWebView)
 [![Version](https://img.shields.io/cocoapods/v/EasyJSWKWebView.svg?style=flat)](http://cocoapods.org/pods/EasyJSWKWebView)
 [![License](https://img.shields.io/cocoapods/l/EasyJSWKWebView.svg?style=flat)](http://cocoapods.org/pods/EasyJSWKWebView)
 [![Platform](https://img.shields.io/cocoapods/p/EasyJSWKWebView.svg?style=flat)](http://cocoapods.org/pods/EasyJSWKWebView)
@@ -29,6 +28,7 @@ webview = EasyJSWKWebView(frame: view.bounds, configuration: config, withJavascr
 ```
 
 ## Requirements
+iOS8+
 
 ## Installation
 

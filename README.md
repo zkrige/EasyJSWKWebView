@@ -9,6 +9,25 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```html
+<html>
+<body><br/><br/><br/><input value="Press Me" type="button" onclick="JSInterface.test();"></body>
+</html>
+```
+
+```swift
+
+public class ClickCatcher : NSObject {
+	public func test() -> String{
+        return "Clicked"
+    }
+}
+
+
+let interfaces = ["JSInterface" : ClickCatcher()];
+webview = EasyJSWKWebView(frame: view.bounds, configuration: config, withJavascriptInterfaces: interfaces)
+```
+
 ## Requirements
 
 ## Installation

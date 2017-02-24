@@ -18,6 +18,8 @@
 @implementation EasyJSListener
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+    NSMutableArray <EasyJSWKDataFunction *>* _funcs = [NSMutableArray new];
+
     if ([message.name isEqualToString:@"Listener"]) {
         __weak EasyJSWKWebView *webView = (EasyJSWKWebView *)message.webView;
         NSString *requestString = [message body];
@@ -26,7 +28,6 @@
         
         NSString* obj = (NSString*)[components objectAtIndex:0];
         NSString* method = [(NSString*)[components objectAtIndex:1] stringByRemovingPercentEncoding];
-        
         NSObject* interface = [self.javascriptInterfaces objectForKey:obj];
         
         // execute the interfacing method
@@ -36,10 +37,10 @@
         invoker.selector = selector;
         invoker.target = interface;
         
-        if ([components count] > 3){
-            NSString *argsAsString = [(NSString*)[components objectAtIndex:3] stringByRemovingPercentEncoding];
-            
+        if ([components count] > 2){
+            NSString *argsAsString = [(NSString*)[components objectAtIndex:2] stringByRemovingPercentEncoding];
             NSArray* formattedArgs = [argsAsString componentsSeparatedByString:@":"];
+            
             for (unsigned long i = 0, j = 0, l = [formattedArgs count]; i < l; i+=2, j++){
                 NSString* type = ((NSString*) [formattedArgs objectAtIndex:i]);
                 NSString* argStr = ((NSString*) [formattedArgs objectAtIndex:i + 1]);
@@ -47,6 +48,8 @@
                 if ([@"f" isEqualToString:type]){
                     EasyJSWKDataFunction* func = [[EasyJSWKDataFunction alloc] initWithWebView:webView];
                     func.funcID = argStr;
+                    //do this to force retain a reference to it
+                    [_funcs addObject:func];
                     [invoker setArgument:&func atIndex:(j + 2)];
                 }else if ([@"s" isEqualToString:type]){
                     NSString* arg = [argStr stringByRemovingPercentEncoding];
@@ -71,6 +74,7 @@
             }
         }
     }
+    [_funcs removeAllObjects];
 }
 
 

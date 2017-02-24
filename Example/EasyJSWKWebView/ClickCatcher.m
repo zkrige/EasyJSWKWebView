@@ -7,6 +7,7 @@
 //
 
 #import "ClickCatcher.h"
+@import EasyJSWKWebView;
 
 @implementation ClickCatcher
 
@@ -15,6 +16,12 @@
     NSLog(@"event from JS was captured here");
     //this value will be sent back to the JS Library
     return @"Clicked";
+}
+
+- (void) testWithFuncParam: (EasyJSWKDataFunction *) param{
+    NSLog(@"test with func");
+    NSString* ret = [param executeWithParam:@"blabla:\"bla"];
+    NSLog(@"Return value from callback: %@", ret);
 }
 
 @end

@@ -5,7 +5,15 @@
             var value = JSInterface.test();
             console.log("returned value : " + value);
         }
+    
+        function test2(){
+            JSInterface.testWithFuncParam(function (data){
+                                       console.log("returned data : " + data); //data would be blabla:"bla
+                                       return "some data";
+                                       });
+        }
     </script>
 </head>
 <body><br/><br/><br/><input value="Press Me" type="button" onclick="test();"></body>
+<body><br/><br/><br/><input value="Press Me" type="button" onclick="test2();"></body>
 </html>

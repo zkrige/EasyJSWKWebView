@@ -1,5 +1,11 @@
 <html>
 <head>
+    <script>
+        function test() {
+            var value = JSInterface.test();
+            console.log("returned value : " + value);
+        }
+    </script>
 </head>
-<body><br/><br/><br/><input value="Press Me" type="button" onclick="JSInterface.test();"></body>
+<body><br/><br/><br/><input value="Press Me" type="button" onclick="test();"></body>
 </html>

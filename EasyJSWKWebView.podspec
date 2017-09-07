@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyJSWKWebView'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'Catch Javascript events in iOS'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Add a JSInterface to your WKWebview just like in android
+Add a JSInterface to your WKWebview just like in android. Catch Javascript events. Send data to javascript from iOS
                        DESC
 
   s.homepage         = 'https://github.com/zkrige/EasyJSWKWebView'

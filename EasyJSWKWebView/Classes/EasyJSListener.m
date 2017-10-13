@@ -19,6 +19,7 @@
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     NSMutableArray <EasyJSWKDataFunction *>* _funcs = [NSMutableArray new];
+    NSMutableArray <NSString *>* _args = [NSMutableArray new];
 
     if ([message.name isEqualToString:@"Listener"]) {
         __weak EasyJSWKWebView *webView = (EasyJSWKWebView *)message.webView;
@@ -46,17 +47,20 @@
                 NSString* argStr = ((NSString*) [formattedArgs objectAtIndex:i + 1]);
                 
                 if ([@"f" isEqualToString:type]){
-                    EasyJSWKDataFunction* func = [[EasyJSWKDataFunction alloc] initWithWebView:webView];
+                    EasyJSWKDataFunction *func = [[EasyJSWKDataFunction alloc] initWithWebView:webView];
                     func.funcID = argStr;
                     //do this to force retain a reference to it
                     [_funcs addObject:func];
                     [invoker setArgument:&func atIndex:(j + 2)];
                 }else if ([@"s" isEqualToString:type]){
                     NSString* arg = [argStr stringByRemovingPercentEncoding];
+                    //do this to force retain a reference to it
+                    [_args addObject:arg];
                     [invoker setArgument:&arg atIndex:(j + 2)];
                 }
             }
         }
+        [invoker retainArguments];
         [invoker invoke];
         
         //return the value by using javascript
@@ -74,7 +78,11 @@
             }
         }
     }
+
+    //clean up any retained funcs
     [_funcs removeAllObjects];
+    //clean up any retained args
+    [_args removeAllObjects];
 }
 
 

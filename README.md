@@ -39,6 +39,10 @@ it, simply add the following line to your Podfile:
 pod "EasyJSWKWebView"
 ```
 
+## Swift
+
+This library uses OBJC functions that are not transportable to SWIFT. If you are using this with swift, remember to tag your methods @objc so that the objc invoker can find them
+
 ## Author
 
 Zayin Krige, zkrige@gmail.com

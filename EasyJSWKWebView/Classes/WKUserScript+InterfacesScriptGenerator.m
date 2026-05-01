@@ -46,9 +46,13 @@
 }
 
 + (instancetype)generateMainScript {
-    NSBundle *podBundle = [NSBundle bundleForClass:[EasyJSWKWebView class]];
-    NSURL *bundleUrl = [podBundle URLForResource:@"EasyJSWKWebView" withExtension:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithURL:bundleUrl];
+    // Resource bundle naming differs between CocoaPods and SPM.
+    // CocoaPods: "EasyJSWKWebView.bundle" alongside the framework.
+    // SPM: "EasyJSWKWebView_EasyJSWKWebView.bundle" alongside the framework.
+    NSBundle *baseBundle = [NSBundle bundleForClass:[EasyJSWKWebView class]];
+    NSURL *bundleURL = [baseBundle URLForResource:@"EasyJSWKWebView_EasyJSWKWebView" withExtension:@"bundle"]
+                    ?: [baseBundle URLForResource:@"EasyJSWKWebView" withExtension:@"bundle"];
+    NSBundle *bundle = bundleURL ? [NSBundle bundleWithURL:bundleURL] : baseBundle;
     NSURL *url = [bundle URLForResource:@"easyjs-inject" withExtension:@"js"];
     NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     WKUserScript *script = [[WKUserScript alloc] initWithSource:content injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];

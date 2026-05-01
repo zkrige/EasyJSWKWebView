@@ -46,13 +46,31 @@
 }
 
 + (instancetype)generateMainScript {
-    // Resource bundle naming differs between CocoaPods and SPM.
-    // CocoaPods: "EasyJSWKWebView.bundle" alongside the framework.
-    // SPM: "EasyJSWKWebView_EasyJSWKWebView.bundle" alongside the framework.
-    NSBundle *baseBundle = [NSBundle bundleForClass:[EasyJSWKWebView class]];
-    NSURL *bundleURL = [baseBundle URLForResource:@"EasyJSWKWebView_EasyJSWKWebView" withExtension:@"bundle"]
-                    ?: [baseBundle URLForResource:@"EasyJSWKWebView" withExtension:@"bundle"];
-    NSBundle *bundle = bundleURL ? [NSBundle bundleWithURL:bundleURL] : baseBundle;
+    // The easyjs-inject.js resource ships in a sibling .bundle whose name and
+    // location depend on how the library is integrated:
+    //   CocoaPods: "EasyJSWKWebView.bundle" alongside the framework binary.
+    //   SPM (statically linked into a host framework): "EasyJSWKWebView_EasyJSWKWebView.bundle"
+    //     at the top of the *main app* bundle, NOT inside bundleForClass:'s framework.
+    //   SPM (linked directly into app): same SPM name, also in main bundle.
+    // Walk likely candidates and try both naming conventions.
+    NSBundle *classBundle = [NSBundle bundleForClass:[EasyJSWKWebView class]];
+    NSArray<NSBundle *> *candidates = [NSBundle mainBundle] == classBundle
+        ? @[classBundle]
+        : @[classBundle, [NSBundle mainBundle]];
+    NSBundle *bundle = nil;
+    for (NSBundle *candidate in candidates) {
+        NSURL *bundleURL = [candidate URLForResource:@"EasyJSWKWebView_EasyJSWKWebView" withExtension:@"bundle"]
+                        ?: [candidate URLForResource:@"EasyJSWKWebView" withExtension:@"bundle"];
+        if (bundleURL) {
+            bundle = [NSBundle bundleWithURL:bundleURL];
+            break;
+        }
+    }
+    if (!bundle) {
+        // Fall back to the framework bundle itself in case the resource was
+        // copied directly inside it (some build setups do this).
+        bundle = classBundle;
+    }
     NSURL *url = [bundle URLForResource:@"easyjs-inject" withExtension:@"js"];
     NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     WKUserScript *script = [[WKUserScript alloc] initWithSource:content injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];

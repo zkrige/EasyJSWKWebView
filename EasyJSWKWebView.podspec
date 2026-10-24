@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyJSWKWebView'
-  s.version          = '1.1.1'
+  s.version          = '2.0.1'
   s.summary          = 'Catch Javascript events in iOS'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Add a JSInterface to your WKWebview just like in android. Catch Javascript event
   s.source           = { :git => 'https://github.com/zkrige/EasyJSWKWebView.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/zkrige'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '15.0'
 
   s.source_files = 'EasyJSWKWebView/Classes/**/*'
 
